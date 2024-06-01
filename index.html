@@ -3,81 +3,132 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>Mauricio M.</title>
+        <!-- Bootstrap CSS -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         />
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html"
-                            ><img
-                                src="images/house-heart.svg"
-                                width="20"
-                            /> Home</a
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mauricio M.</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="mailto:mauriciomartinezmona@icloud.com"
+                            >Email</a
                         >
                     </li>
-                    <li>
-                        <a href="rigidbody.html">
-                     Learning object creation
-                        </a>
-                    </li>
-                    <li>
-                        <a href="vLex.html">
-                     Knowledge base development
-                        </a>
-                    </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+
+        <!-- Header Image and Introduction -->
+        <header class="jumbotron text-center">
+            <img
+                src="images/pic.jpg"
+                class="rounded-circle"
+                alt="Profile Picture"
+                style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5)"
+            />
+            <h1 id="about" class="display-4">Mauricio Martínez Moná</h1>
+            <p class="lead">
+                Passionate technical writer, instructional designer and (very)
+                amateur piano player, I aim to create delightful learning
+                experiences with business impact.​
+            </p>
+            <p class="lead">
+                This portfolio is (and will always be) under construction 🏗️. If
+                you see something that acts odd, be forgiving. My web
+                development skills are not the main attraction.
+            </p>
         </header>
-
-        <section id="about">
-            <h1>Mauricio Martínez Moná</h1>
-            <div class="container">
-            <div class="column1">
-                <img class="shadowed-image" src="images/pic.jpg" width="70%">
+        <!-- Grid of Options -->
+        <div id="projects" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img
+                            src="images/rigidbody.gif"
+                            class="card-img-top"
+                            alt="Project 1"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Learning object</h5>
+                            <p class="card-text">
+                                The objective was to create a series of learning
+                                objects to introduce and support a live session.
+                            </p>
+                            <p>Format: Video, text.</p>
+                            <a href="rigidbody.html" class="btn btn-primary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img
+                            src="images/vlexkb.png"
+                            class="card-img-top"
+                            alt="Project 2"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Knowledge base</h5>
+                            <p class="card-text">
+                                The objective was to update the company
+                                knowledge base.
+                            </p>
+                            <p>Format: Text, images.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img
+                            src="images/unpoquito.png"
+                            class="card-img-top"
+                            alt="Project 3"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Edutainment</h5>
+                            <p class="card-text">
+                                With authentic-looking material, offer an
+                                experience for learners of Spanish.
+                            </p>
+                            <p>Format: Text.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="column2">
-                <p>Passionate technical writer, instructional designer and (very) amateur piano player, I aim to create delightful learning experiences with business impact.​</p>
-                <p>This portfolio is (and will always be) 🏗️ under construction.</br> If you see something that acts odd, be forgiving. My web development skills are not the main attraction.</p>
-            </div>
-        </section>
+        </div>
 
-        <section id="projects">
-            <a href="rigidbody.html">
-            <div class="project">
-<img src="images/Rigidbody.png" class="shadowed-image" style="float:right; max-width: 30%; margin-top: 5%; margin-right: 30px;" />
-
-<h2>Learning object creation</h2>
-
-                <p>
-                    Create a learning object introducing a critical concept in game development. This object is used as support for a live session.
-                </p>
-                <p>
-                    Format: Video, text.
-                </p>
-            </div></a>
-            <div class="project">
-                <a href="vLex.html">
-                        <img src="images/vLexLogo.png" class="shadowed-image" style="float:right; max-width: 30%; margin-top: 5%; margin-right: 30px;" />
-                    <h2>Knowledge base development</h2>
-                    <p>
-                        Renovation of the Knowledge Base for the AI-powered legal research platform vLex.
-                    </p>
-                    <p>
-                        Format: Technical text.
-                    </p>
-                </a>
-            </div>
-        </section>
-<hr/>
-            <p style="text-align: right;">maurovanadio+portfolio@gmail.com</p>
+        <!-- Bootstrap JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
