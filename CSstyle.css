@@ -1,0 +1,178 @@
+/* Set the white background */
+div.learningobject {
+    background-color: #fff;
+    color: #000; /* Set text color to black for better contrast */
+    font-family: "Inter", sans-serif; /* Use Roboto as the primary font */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: black;
+    background-color: #f8f8ff;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+/* Define styles for different heading levels */
+h1 {
+    font-size: 70px;
+    padding-bottom: 10pt;
+    border-bottom: 1pt solid lightgrey;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 4px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+/* Set the link color to #346EDD */
+a {
+    color: #346edd;
+    text-decoration: none;
+}
+
+/* Define font for secondary text elements */
+p {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+pre {
+    font-size: 18px;
+}
+
+ul,
+ol,
+li {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}
+div.example {
+    border: solid #f7f7ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    padding: 5pt;
+    margin-bottom: 20px;
+}
+
+div.footnote {
+    color: gray;
+    font-size: 14px;
+}
+
+p.code {
+    background-color: #f6f6f6;
+    color: black;
+    padding-left: 3pt;
+    padding-right: 3pt;
+    font-size: 18px;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container,
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 15pt 5% 15pt 5%;
+}
+
+.video-container::after,
+.youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+.video-container iframe,
+.youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Apply a modern look to the table */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.modern-table th,
+.modern-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Set background and text color for header */
+.modern-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Apply alternating background colors to table rows */
+.modern-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* Hover effect on table rows */
+.modern-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Style the caption (if used) */
+.modern-table caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Add a subtle shadow to the table */
+.modern-table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+.grid-item {
+    padding: 10px;
+    border-radius: 5px;
+}
+.grid-item img {
+    max-width: 100%;
+}
+.span-two-columns {
+    grid-column: span 2;
+    font-size: 18px;
+}
+.full-row {
+    grid-column: span 3;
+}
