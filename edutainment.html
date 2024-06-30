@@ -3,30 +3,157 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>Learning object, by Mauricio M.</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="CSstyle.css" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         />
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html"
-                            ><img src="images/house-heart.svg" width="20" />
-                            Home</a
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mauricio M.</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="mailto:mauriciomartinezmona@icloud.com"
+                            >Email</a
                         >
                     </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+
+        <!-- Header Image and Introduction -->
+        <header class="jumbotron text-center">
+            <h1 id="about" class="display-4">Learning object creation</h1>
+            <p class="lead">
+                «Un Poquito» is an edutainment website that provides learners of
+                Spanish with authentic-looking texts to practice the language
+                they are learning.
+            </p>
+            <p class="lead">
+                It is based on a literacy-based perspective, where language is
+                learned with usage.
+            </p>
         </header>
-        <section id="video">
-            <h2>Video</h2>
-        </section>
+        <!-- Learning object creation -->
+        <div class="edutainment">
+            <div
+                class="container"
+                style="max-width: 80%; margin-left: 10%; margin-right: 10%"
+            >
+                <p class="lead">The best portfolio is a live product.</p>
+            </div>
+            <div class="container">
+                <a href="https://unpoquito.co/" rel="noopener noreferrer"
+                    ><img
+                        class="shadowed-image"
+                        src="images/UnPoquito.png"
+                        style="
+                            max-width: 80%;
+                            margin-left: 10%;
+                            margin-right: 10%;
+                        "
+                /></a>
+            </div>
+            <hr />
+        </div>
+
+        <!-- Grid of Options -->
+        <div id="projects" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img
+                            src="images/rigidbody.gif"
+                            class="card-img-top"
+                            alt="Project 1"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Learning object</h5>
+                            <p class="card-text">
+                                Objective: Introduce and support a live session
+                                about technical topics.
+                            </p>
+                            <p>Format: Video, text.</p>
+                            <a
+                                href="learning-object.html"
+                                class="btn btn-primary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img
+                            src="images/vlexkb.png"
+                            class="card-img-top"
+                            alt="Project 2"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Knowledge base</h5>
+                            <p class="card-text">
+                                Objective: Update the company knowledge base
+                                with a user-friendly approach.
+                            </p>
+                            <p>Format: Text, images.</p>
+                            <a
+                                href="knowledge-base.html"
+                                class="btn btn-primary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img
+                            src="images/unpoquito.png"
+                            class="card-img-top"
+                            alt="Project 3"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Edutainment</h5>
+                            <p class="card-text">
+                                Objective: Entertaining learning experience with
+                                authentic material.
+                            </p>
+                            <p>Format: Text.</p>
+                            <a href="edutainment.html" class="btn btn-primary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
